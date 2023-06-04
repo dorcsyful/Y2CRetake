@@ -2,7 +2,6 @@
 
 #include "BSPDungeon.h"
 #include "CellularAutomata.h"
-#include "PerlinNoise.h"
 #include "Maze.h"
 void BasicLayout::Build(int a_Seed)
 {
@@ -10,12 +9,8 @@ void BasicLayout::Build(int a_Seed)
     Maze maze;
     maze.GenerateMaze(m_Tiles, WIDTH, HEIGHT, a_Seed);
 
-
-	CellularAutomata ca(WIDTH, HEIGHT);
+	CellularAutomata ca;
     ca.CAInterior(m_Tiles);
-
-
-
 
 	BSPDungeon dungeon;
     dungeon.GenerateBSP(m_Tiles, a_Seed);

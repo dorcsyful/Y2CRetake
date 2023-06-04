@@ -61,7 +61,7 @@ void PerlinNoise::GenerateNoiseMap(std::vector<ETILE_TYPE>& a_Tiles, int a_Width
 				if (n > 0.3)
 				{
 
-					a_Tiles[y * a_Width + x] = ETILE_TYPE::TILE_INTERNAL_WALL;
+					a_Tiles[y * a_Width + x] = ETILE_TYPE::TILE_MAZE_WALL;
 				}
 				else { a_Tiles[y * a_Width + x] = ETILE_TYPE::TILE_FLOOR; }
 			}

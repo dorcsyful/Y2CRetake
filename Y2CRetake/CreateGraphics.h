@@ -12,7 +12,6 @@ public:
 	~CreateGraphics() = default;
 
 	void CreateWindow();
-	void UpdateSprites(const BasicLayout& a_Layout);
 
 	void CreateRegerateButton();
 	void CreateImageGenerateButton();
@@ -28,7 +27,6 @@ public:
 	sf::RectangleShape m_GenerateImageBox;
 
 private:
-	void LoadTextures();
 	void LoadText();
 
 

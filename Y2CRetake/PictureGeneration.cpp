@@ -115,9 +115,8 @@ void Image::Generate(const std::vector<ETILE_TYPE>& a_Tiles, int a_Seed, int a_S
 			{
 				Color color;
 				if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_FLOOR) { color = Color(1.f, 1.f, 1.f); }
-				else if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_DOOR) { color = Color(1.f, 0.f, 0.f); }
-				else if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_INTERNAL_WALL) { color = Color(0.f, 1.f, 0.f); }
-				else if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_HALF_WALL) { color = Color(0.f, 0.f, 1.f); }
+				else if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_MAZE_WALL) { color = Color(0.f, 1.f, 0.f); }
+				else if (a_Tiles[y * WIDTH + x] == ETILE_TYPE::TILE_BSP_WALL) { color = Color(0.f, 0.f, 1.f); }
 				else { color = Color(0.f, 0.f, 0.f); }
 
 				int img_x = x * a_Scale;
