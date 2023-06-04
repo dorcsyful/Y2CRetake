@@ -21,13 +21,15 @@ public:
     //Divide room into 4
     void DivideRoom(const Room& a_Room);
 
+    //Select a random room out of m_Rooms
     Room SelectRandomRoom();
 
+    //Get a randomly sized area out of on existing room
     Room SelectRandomSubRoom(const Room& a_Room);
 
-    bool Allowed(std::vector<ETILE_TYPE>& a_Tiles, Room a_Rect);
+    //Is the room bit enough to be divided?
+    bool Allowed(std::vector<ETILE_TYPE>& a_Tiles, const Room& a_Rect);
 
-    void AddRoom(Room& a_Room, int a_Random);
 
     std::vector<Room> m_Rooms;
 };
