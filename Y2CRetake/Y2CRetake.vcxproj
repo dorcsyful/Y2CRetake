@@ -227,9 +227,6 @@
     <ResourceCompile Include="Y2CRetake.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Rules.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\Dependencies\beach_tiles.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

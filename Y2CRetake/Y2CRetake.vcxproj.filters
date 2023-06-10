@@ -84,9 +84,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Rules.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\Dependencies\beach_tiles.png">
       <Filter>Resource Files</Filter>
     </Image>
