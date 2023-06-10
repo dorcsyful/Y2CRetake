@@ -1,6 +1,6 @@
 #pragma once
 #define MIN_ROOM_SIZE 8
-#define MAX_ROOM_SIZE
+#define MAX_ROOM_SIZE 16
 #define CA_GENERATIONS
 #define WIDTH 30
 #define HEIGHT 30
