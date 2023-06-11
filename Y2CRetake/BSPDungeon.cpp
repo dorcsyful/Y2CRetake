@@ -63,8 +63,8 @@ Room BSPDungeon::SelectRandomSubRoom(const Room& a_Room)
     int room_height = abs(a_Room.m_Start[1] - a_Room.m_End[1]);
 
     //Select random values within the bounds
-    int w = std::max(MIN_ROOM_SIZE / 2, std::rand() % std::min(room_width, MIN_ROOM_SIZE));
-    int h = std::max(MIN_ROOM_SIZE / 2, std::rand() % std::min(room_height, MIN_ROOM_SIZE));
+    int w = std::max(MIN_ROOM_SIZE / 2, std::rand() % std::max(room_width, MIN_ROOM_SIZE));
+    int h = std::max(MIN_ROOM_SIZE / 2, std::rand() % std::max(room_height, MIN_ROOM_SIZE));
 
     //Create new room
     result.m_Start[0] += std::rand() % MIN_ROOM_SIZE;

@@ -15,6 +15,7 @@ public:
 
 	void CreateRegerateButton();
 	void CreateImageGenerateButton();
+	void CreateBenchmarkButton();
 	int m_SpriteSize = 32;
 	std::shared_ptr<sf::RenderWindow> m_Window;
 	std::vector<sf::RectangleShape> m_Sprites;
@@ -25,6 +26,10 @@ public:
 
 	sf::Text m_GenerateImageText;
 	sf::RectangleShape m_GenerateImageBox;
+
+	sf::Text m_BenchmarkText;
+	sf::Text m_BenchmarkResultText;
+	sf::RectangleShape m_BenchmarkBox;
 
 private:
 	void LoadText();

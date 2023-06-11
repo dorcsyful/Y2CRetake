@@ -1,7 +1,7 @@
 #include "CreateGraphics.h"
 
 #include "GeneratorProperties.h"
-#include "BasicLayout.h"
+
 void CreateGraphics::CreateWindow()
 {
 
@@ -11,6 +11,7 @@ void CreateGraphics::CreateWindow()
     LoadText();
     CreateRegerateButton();
     CreateImageGenerateButton();
+    CreateBenchmarkButton();
 }
 
 void CreateGraphics::CreateRegerateButton()
@@ -41,6 +42,21 @@ void CreateGraphics::CreateImageGenerateButton()
     m_GenerateImageText.setStyle(sf::Text::Bold);
     m_GenerateImageText.setString("Generate image");
     m_GenerateImageText.setPosition(0, 300);
+}
+
+void CreateGraphics::CreateBenchmarkButton()
+{
+    m_BenchmarkBox.setPosition(sf::Vector2<float>(0, 600));
+    m_BenchmarkBox.setFillColor(sf::Color::Blue);
+    m_BenchmarkBox.setSize(sf::Vector2<float>(200, 50));
+
+
+    m_BenchmarkText.setFont(m_Font);
+    m_BenchmarkText.setCharacterSize(20);
+    m_BenchmarkText.setFillColor(sf::Color::White);
+    m_BenchmarkText.setStyle(sf::Text::Bold);
+    m_BenchmarkText.setString("Benchmark");
+    m_BenchmarkText.setPosition(0, 600);
 }
 
 void CreateGraphics::LoadText()
